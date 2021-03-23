@@ -13,12 +13,12 @@ namespace ImgTransformer.Geneartors
         /// 使用全局参数生成图像
         /// </summary>
         /// <returns></returns>
-        public Image<TPixel> Generate<TPixel>() where TPixel : unmanaged, IPixel<TPixel>;
+        public Image Generate<TPixel>() where TPixel : unmanaged, IPixel<TPixel>;
         /// <summary>
         /// 指定具体参数生成图像
         /// </summary>
         /// <param name="argument"></param>
         /// <returns></returns>
-        public Image<TPixel> Generate<TPixel>(ImageArgument argument) where TPixel : unmanaged, IPixel<TPixel>;
+        public Image Generate<TPixel>(ImageArgument argument) where TPixel : unmanaged, IPixel<TPixel>;
     }
 }

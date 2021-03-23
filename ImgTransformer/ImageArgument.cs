@@ -1,4 +1,5 @@
 ﻿using System;
+using Newtonsoft.Json;
 using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.PixelFormats;
 using SixLabors.ImageSharp.Formats;
@@ -16,11 +17,13 @@ namespace ImgTransformer
         /// </summary>
         public Size imageSize;
 
+        [JsonIgnore]
         private Type _pixelType;
 
         /// <summary>
         /// 像素类型
         /// </summary>
+        [JsonIgnore]
         public Type PixelType
         {
             get => _pixelType;
